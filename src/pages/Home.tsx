@@ -125,7 +125,9 @@ export function Home() {
   const showcaseDotPrimaryClass = isBlueShowcase ? 'bg-blue-500' : 'bg-purple-500';
   const showcaseDotSecondaryClass = isBlueShowcase ? 'bg-blue-500/30' : 'bg-purple-500/30';
   const showcaseCategoryClass = isBlueShowcase ? 'text-blue-400/60' : 'text-purple-400/60';
-  const showcaseFrameClass = 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm';
+  const showcaseFrameClass = isBlueShowcase
+    ? 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm'
+    : 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(147,51,234,0.28)] backdrop-blur-sm';
   const showcaseImageClass = 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
   const bannerOrderButtonBaseClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-sm md:text-base';
   const bannerDetailsButtonClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base';
@@ -371,12 +373,14 @@ export function Home() {
         {/* Navigation Arrows */}
         <button 
           onClick={prevBanner}
+          aria-label="Previous banner"
           className="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white hover:bg-white dark:hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
         >
           <ChevronLeft size={32} />
         </button>
         <button 
           onClick={nextBanner}
+          aria-label="Next banner"
           className="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white hover:bg-white dark:hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
         >
           <ChevronRight size={32} />
@@ -388,7 +392,7 @@ export function Home() {
             <button
               key={i}
               onClick={() => setActiveBanner(i)}
-              className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? 'w-20 bg-blue-500' : 'w-8 bg-black/20 dark:bg-white/20'}`}
+              className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? `w-20 ${bannerAccentDotClass}` : 'w-8 bg-black/20 dark:bg-white/20'}`}
             />
           ))}
         </div>
