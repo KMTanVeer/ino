@@ -128,9 +128,12 @@ export function Home() {
   const showcaseFrameClass = isBlueShowcase
     ? 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm'
     : 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(147,51,234,0.28)] backdrop-blur-sm';
-  const showcaseImageClass = 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
+  const showcaseImageClass = isBlueShowcase
+    ? 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110'
+    : 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(147,51,234,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
   const bannerOrderButtonBaseClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-sm md:text-base';
   const bannerDetailsButtonClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base';
+  const bannerContactHoverClass = isBlueBanner ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-purple-600 dark:hover:text-purple-400';
 
   return (
     <div className="relative overflow-hidden bg-white dark:bg-black transition-colors duration-300">
@@ -360,7 +363,7 @@ export function Home() {
                   </div>
                   <div className="flex flex-col border-l border-black/15 dark:border-white/10 pl-6 sm:border-l-0 sm:pl-0 lg:border-l lg:pl-6">
                     <span className="text-[10px] text-black/45 dark:text-white/30 font-bold uppercase tracking-[0.2em] mb-1">Enquire Now</span>
-                    <a href="tel:+8801813065665" className="text-lg md:text-xl font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <a href="tel:+8801813065665" className={`text-lg md:text-xl font-bold text-black dark:text-white transition-colors ${bannerContactHoverClass}`}>
                       +8801813065665
                     </a>
                   </div>
