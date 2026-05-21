@@ -395,6 +395,8 @@ export function Home() {
             <button
               key={i}
               onClick={() => setActiveBanner(i)}
+              aria-label={`Go to banner ${i + 1}`}
+              aria-current={activeBanner === i ? 'true' : undefined}
               className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? `w-20 ${bannerAccentDotClass}` : 'w-8 bg-black/20 dark:bg-white/20'}`}
             />
           ))}
