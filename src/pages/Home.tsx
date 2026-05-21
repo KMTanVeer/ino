@@ -243,7 +243,7 @@ export function Home() {
                           <div className={`w-1.5 h-1.5 rounded-full bg-${heroShowcase[heroShowcaseIndex].color}-500/30`} />
                         </div>
                       </div>
-                      <h4 className="text-3xl font-black text-white tracking-tight leading-tight">
+                      <h4 className="text-3xl font-black text-black dark:text-white tracking-tight leading-tight">
                         {heroShowcase[heroShowcaseIndex].name}
                       </h4>
                       <p className={`text-xs text-${heroShowcase[heroShowcaseIndex].color}-400/60 font-black uppercase tracking-[0.4em]`}>
