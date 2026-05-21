@@ -159,7 +159,7 @@ export function Home() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl text-black/60 dark:text-white/50 leading-relaxed max-w-2xl"
+              className="text-lg md:text-xl text-black/75 dark:text-white/55 leading-relaxed max-w-2xl"
             >
               Inovexa Technology is a modern IT infrastructure and networking solutions company specializing in enterprise networking, server solutions, ISP equipment, and smart security systems.
             </motion.p>
@@ -200,7 +200,7 @@ export function Home() {
               ].map((stat, i) => (
                 <div key={i} className="space-y-1">
                   <div className="text-2xl font-bold text-black dark:text-white tracking-tight">{stat.value}</div>
-                  <div className="text-[10px] uppercase tracking-widest text-black/40 dark:text-white/40 font-bold">{stat.label}</div>
+                  <div className="text-[10px] uppercase tracking-widest text-black/55 dark:text-white/40 font-bold">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -224,11 +224,11 @@ export function Home() {
                   <div className={`absolute inset-0 bg-${heroShowcase[heroShowcaseIndex].color}-500/10 blur-[120px] rounded-full opacity-40 group-hover:opacity-60 transition-opacity`} />
                   
                   <div className="relative flex flex-col items-center text-center">
-                    <div className="relative w-full aspect-video flex items-center justify-center mb-8 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_90%)]">
+                    <div className="relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm">
                       <img 
                         src={heroShowcase[heroShowcaseIndex].image} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
-                        className="w-full h-full object-contain mix-blend-screen drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] hover:scale-110 transition-transform duration-700 brightness-110 contrast-110"
+                        className="w-full h-full object-cover rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -259,7 +259,7 @@ export function Home() {
       </section>
 
       {/* Full-Screen Promotional Banner Slider */}
-      <section className="relative min-h-[100vh] md:h-screen w-full overflow-hidden bg-black flex items-center">
+      <section className="relative min-h-[100vh] md:h-screen w-full overflow-hidden bg-white dark:bg-black transition-colors duration-300 flex items-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeBanner}
@@ -274,11 +274,11 @@ export function Home() {
               <img 
                 src={BANNERS[activeBanner].image} 
                 alt={BANNERS[activeBanner].title}
-                className="w-full h-full object-cover opacity-20 scale-105"
+                className="w-full h-full object-cover opacity-30 dark:opacity-20 scale-105"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
-              <div className={`absolute inset-0 bg-${BANNERS[activeBanner].accent}-600/5 mix-blend-overlay`} />
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/45 dark:from-black dark:via-black/80 dark:to-transparent" />
+              <div className={`absolute inset-0 bg-${BANNERS[activeBanner].accent}-600/10 dark:bg-${BANNERS[activeBanner].accent}-600/5 mix-blend-multiply dark:mix-blend-overlay`} />
             </div>
 
             <div className="container mx-auto px-6 h-full flex items-center relative z-10">
@@ -289,14 +289,14 @@ export function Home() {
                   transition={{ delay: 0.2, duration: 0.8 }}
                   className="space-y-4"
                 >
-                  <h2 className="text-4xl md:text-7xl font-bold text-white tracking-tighter leading-tight">
+                  <h2 className="text-4xl md:text-7xl font-bold text-black dark:text-white tracking-tighter leading-tight">
                     {BANNERS[activeBanner].title.split(' ').map((word, i) => (
                       <span key={i} className={i >= 2 ? `text-${BANNERS[activeBanner].accent}-500/90` : ''}>
                         {word}{' '}
                       </span>
                     ))}
                   </h2>
-                  <p className="text-xl md:text-2xl text-white/60 font-medium max-w-2xl">
+                  <p className="text-xl md:text-2xl text-black/70 dark:text-white/60 font-medium max-w-2xl">
                     {BANNERS[activeBanner].subtitle}
                   </p>
                 </motion.div>
@@ -310,7 +310,7 @@ export function Home() {
                   {BANNERS[activeBanner].features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className={`w-2 h-2 rounded-full bg-${BANNERS[activeBanner].accent}-500 animate-pulse`} />
-                      <span className="text-sm md:text-base text-white/40 tracking-wider uppercase font-bold">{feature}</span>
+                      <span className="text-sm md:text-base text-black/65 dark:text-white/45 tracking-wider uppercase font-bold">{feature}</span>
                     </div>
                   ))}
                 </motion.div>
@@ -332,14 +332,14 @@ export function Home() {
                     </a>
                     <Link 
                       to={`/product/${BANNERS[activeBanner].id}`}
-                      className="px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/5 border border-white/10 text-white font-black uppercase tracking-widest transition-all hover:bg-white/10 backdrop-blur-xl text-sm md:text-base"
+                      className="px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base"
                     >
                       More Details
                     </Link>
                   </div>
-                  <div className="flex flex-col border-l border-white/10 pl-6 sm:border-l-0 sm:pl-0 lg:border-l lg:pl-6">
-                    <span className="text-[10px] text-white/30 font-bold uppercase tracking-[0.2em] mb-1">Enquire Now</span>
-                    <a href="tel:+8801813065665" className="text-lg md:text-xl font-bold text-white hover:text-blue-400 transition-colors">
+                  <div className="flex flex-col border-l border-black/15 dark:border-white/10 pl-6 sm:border-l-0 sm:pl-0 lg:border-l lg:pl-6">
+                    <span className="text-[10px] text-black/45 dark:text-white/30 font-bold uppercase tracking-[0.2em] mb-1">Enquire Now</span>
+                    <a href="tel:+8801813065665" className="text-lg md:text-xl font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                       +8801813065665
                     </a>
                   </div>
@@ -352,13 +352,13 @@ export function Home() {
         {/* Navigation Arrows */}
         <button 
           onClick={prevBanner}
-          className="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
+          className="absolute left-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white hover:bg-white dark:hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
         >
           <ChevronLeft size={32} />
         </button>
         <button 
           onClick={nextBanner}
-          className="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
+          className="absolute right-6 top-1/2 -translate-y-1/2 z-30 w-16 h-16 flex items-center justify-center rounded-full bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white hover:bg-white dark:hover:bg-white/10 transition-all backdrop-blur-md opacity-0 hover:opacity-100 group-hover:opacity-100"
         >
           <ChevronRight size={32} />
         </button>
@@ -369,7 +369,7 @@ export function Home() {
             <button
               key={i}
               onClick={() => setActiveBanner(i)}
-              className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? 'w-20 bg-blue-500' : 'w-8 bg-white/20'}`}
+               className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? 'w-20 bg-blue-500' : 'w-8 bg-black/20 dark:bg-white/20'}`}
             />
           ))}
         </div>
@@ -386,9 +386,9 @@ export function Home() {
             <div className="flex flex-col md:flex-row items-end justify-between gap-6 mb-16">
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">Featured Hardware</h2>
-                <p className="text-black/50 dark:text-white/40 max-w-lg">Engineered for performance. Built for scale. Discover our most popular enterprise solutions.</p>
+                <p className="text-black/65 dark:text-white/40 max-w-lg">Engineered for performance. Built for scale. Discover our most popular enterprise solutions.</p>
               </div>
-              <Link to="/shop" className="flex items-center gap-2 text-blue-400 font-bold hover:text-blue-300 transition-colors uppercase tracking-widest text-xs">
+              <Link to="/shop" className="flex items-center gap-2 text-blue-700 dark:text-blue-400 font-bold hover:text-blue-800 dark:hover:text-blue-300 transition-colors uppercase tracking-widest text-xs">
                 Browse Full Catalog <ChevronRight size={16} />
               </Link>
             </div>
