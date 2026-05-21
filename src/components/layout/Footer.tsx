@@ -35,9 +35,15 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-black dark:text-white font-bold tracking-tight">Quick Links</h4>
             <ul className="space-y-4">
-              {['Home', 'Shop', 'Categories', 'About', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link to={`/${item.toLowerCase().replace(' ', '-')}`} className="text-black/60 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors text-sm">{item}</Link>
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'Shop', path: '/shop' },
+                { name: 'Categories', path: '/categories' },
+                { name: 'About', path: '/contact' },
+                { name: 'Contact', path: '/contact' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.path} className="text-black/60 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors text-sm">{item.name}</Link>
                 </li>
               ))}
             </ul>
