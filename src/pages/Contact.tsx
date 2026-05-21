@@ -2,10 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, Clock, ShieldCheck, Target, Users, Rocket } from 'lucide-react';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
+import { SEO } from '@/src/components/common/SEO.tsx';
 
 export function Contact() {
   return (
     <div className="pt-32 pb-24 min-h-screen relative overflow-hidden">
+      <SEO
+        title="Contact Inovexa Technology"
+        description="Contact Inovexa Technology for enterprise networking equipment, switches, routers, LAN cards, SSD storage, and data center infrastructure support."
+        keywords="contact networking equipment supplier, enterprise it support, router supplier bangladesh, switch supplier dhaka"
+        url="https://inovexabd.com/contact"
+      />
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/5 blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-600/5 blur-[120px] rounded-full -z-10" />

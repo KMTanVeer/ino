@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { PRODUCTS, CATEGORIES } from '@/src/data/products.ts';
 import { ProductCard } from '@/src/components/common/ProductCard.tsx';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
+import { SEO } from '@/src/components/common/SEO.tsx';
 import { useState, useEffect } from 'react';
 
 const BANNERS = [
@@ -112,6 +113,23 @@ export function Home() {
 
   return (
     <div className="relative overflow-hidden bg-white dark:bg-black transition-colors duration-300">
+      <SEO
+        title="Enterprise Networking Equipment, Switches, Routers, LAN Cards & SSDs"
+        description="Shop enterprise networking equipment in Bangladesh including switches, routers, LAN cards, SSD storage, servers, transceivers, and data center hardware."
+        keywords="networking equipment, enterprise switches, routers, lan card, ssd, server hardware, datacenter equipment, bangladesh"
+        url="https://inovexabd.com/"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Inovexa Technology',
+          url: 'https://inovexabd.com/',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://inovexabd.com/shop?q={search_term_string}',
+            'query-input': 'required name=search_term_string',
+          },
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
         {/* Animated Background Elements */}
@@ -225,7 +243,7 @@ export function Home() {
                           <div className={`w-1.5 h-1.5 rounded-full bg-${heroShowcase[heroShowcaseIndex].color}-500/30`} />
                         </div>
                       </div>
-                      <h4 className="text-3xl font-black text-white tracking-tight leading-tight">
+                      <h4 className="text-3xl font-black text-black dark:text-white tracking-tight leading-tight">
                         {heroShowcase[heroShowcaseIndex].name}
                       </h4>
                       <p className={`text-xs text-${heroShowcase[heroShowcaseIndex].color}-400/60 font-black uppercase tracking-[0.4em]`}>
@@ -363,12 +381,12 @@ export function Home() {
         onMouseEnter={() => setIsSliderPaused(true)}
         onMouseLeave={() => setIsSliderPaused(false)}
       >
-         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent" />
          <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-end justify-between gap-6 mb-16">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">Featured Hardware</h2>
-                <p className="text-white/40 max-w-lg">Engineered for performance. Built for scale. Discover our most popular enterprise solutions.</p>
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">Featured Hardware</h2>
+                <p className="text-black/50 dark:text-white/40 max-w-lg">Engineered for performance. Built for scale. Discover our most popular enterprise solutions.</p>
               </div>
               <Link to="/shop" className="flex items-center gap-2 text-blue-400 font-bold hover:text-blue-300 transition-colors uppercase tracking-widest text-xs">
                 Browse Full Catalog <ChevronRight size={16} />
@@ -412,15 +430,15 @@ export function Home() {
           <GlassContainer className="p-12 md:p-24 bg-blue-600/5 overflow-hidden group">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
             <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
-              <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Ready to Upgrade Your <br />Infrastructure?</h2>
-              <p className="text-white/60 text-lg">
+              <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white tracking-tight">Ready to Upgrade Your <br />Infrastructure?</h2>
+              <p className="text-black/70 dark:text-white/60 text-lg">
                 Join hundreds of enterprises trust Inovexa Technology for their mission-critical networking and server requirements.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-6">
                 <Link to="/contact" className="px-10 py-5 rounded-full bg-white text-black font-bold hover:bg-blue-600 hover:text-white transition-all">
                   Contact Sales Specialist
                 </Link>
-                <Link to="/contact" className="px-10 py-5 rounded-full border border-white/20 text-white font-bold hover:bg-white/10 transition-all">
+                <Link to="/contact" className="px-10 py-5 rounded-full border border-black/20 dark:border-white/20 text-black dark:text-white font-bold hover:bg-black/5 dark:hover:bg-white/10 transition-all">
                   About Inovexa
                 </Link>
               </div>

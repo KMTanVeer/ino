@@ -2,10 +2,17 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { CATEGORIES } from '@/src/data/products.ts';
 import { ChevronRight } from 'lucide-react';
+import { SEO } from '@/src/components/common/SEO.tsx';
 
 export function Categories() {
   return (
     <div className="pt-32 pb-24 min-h-screen relative">
+      <SEO
+        title="Networking Equipment Categories"
+        description="Explore networking equipment categories including switches, routers, servers, storage, transceivers, LAN cards and enterprise components."
+        keywords="networking categories, switches, routers, lan card, ssd storage, server hardware, enterprise infrastructure"
+        url="https://inovexabd.com/categories"
+      />
       <div className="container mx-auto px-6">
         <div className="max-w-4xl space-y-4 mb-16">
           <h1 className="text-5xl font-bold tracking-tight text-black dark:text-white font-display">Hardware Categories</h1>
