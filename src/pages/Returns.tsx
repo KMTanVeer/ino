@@ -2,10 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, RefreshCw, Clock, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '@/src/components/common/SEO.tsx';
 
 export function Returns() {
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white dark:bg-black transition-colors">
+      <SEO
+        title="Returns & Warranty Policy"
+        description="Read Inovexa Technology returns and warranty policy for networking equipment, switches, routers, servers, LAN cards and SSD products."
+        keywords="returns policy, warranty policy, networking equipment warranty, router warranty, switch replacement"
+        url="https://inovexabd.com/returns"
+      />
       <div className="container max-w-4xl mx-auto px-6">
         <Link to="/" className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 mb-8 hover:underline">
           <ArrowLeft size={16} /> Back to Home

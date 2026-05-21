@@ -3,12 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Navbar } from '@/src/components/layout/Navbar.tsx';
 import { Footer } from '@/src/components/layout/Footer.tsx';
 import { FloatingWhatsApp } from '@/src/components/common/FloatingWhatsApp.tsx';
-import { SEO } from '@/src/components/common/SEO.tsx';
 import { Home } from '@/src/pages/Home.tsx';
 import { Shop } from '@/src/pages/Shop.tsx';
 import { ProductDetail } from '@/src/pages/ProductDetail.tsx';
@@ -23,7 +22,6 @@ export default function App() {
     <HelmetProvider>
       <Router>
         <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
-          <SEO />
           <Navbar />
           <main>
           <Routes>
@@ -45,4 +43,3 @@ export default function App() {
     </HelmetProvider>
   );
 }
-

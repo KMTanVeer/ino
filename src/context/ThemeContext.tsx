@@ -24,16 +24,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'light' ? 'dark' : 'all')); // Typo fix later or just 'dark'
-  };
-
-  // Correcting the typo and logic
-  const handleToggle = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme: handleToggle }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );

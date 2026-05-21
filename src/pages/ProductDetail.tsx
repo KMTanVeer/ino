@@ -5,6 +5,7 @@ import { Star, Heart, ShieldCheck, Truck, RotateCcw, Share2, ChevronRight, Zap, 
 import { PRODUCTS, type Product } from '@/src/data/products.ts';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
 import { ProductCard } from '@/src/components/common/ProductCard.tsx';
+import { SEO } from '@/src/components/common/SEO.tsx';
 
 export function ProductDetail() {
   const { id } = useParams();
@@ -36,6 +37,32 @@ export function ProductDetail() {
 
   return (
     <div className="pt-32 pb-24 min-h-screen relative overflow-hidden">
+        <SEO
+          title={`${product.name} | Enterprise Networking Equipment`}
+          description={product.description}
+          keywords={`${product.name}, ${product.category}, networking equipment, enterprise router, switch, lan card, ssd`}
+          url={`https://inovexabd.com/product/${product.id}`}
+          type="product"
+          structuredData={{
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: product.name,
+            description: product.description,
+            category: product.category,
+            image: product.image,
+            brand: {
+              '@type': 'Brand',
+              name: 'Inovexa Technology',
+            },
+            offers: {
+              '@type': 'Offer',
+              priceCurrency: 'BDT',
+              price: '0.00',
+              availability: 'https://schema.org/InStock',
+              url: `https://inovexabd.com/product/${product.id}`,
+            },
+          }}
+        />
         {/* Glows */}
         <div className="absolute top-0 left-0 w-[800px] h-[800px] bg-blue-600/5 blur-[160px] rounded-full -z-10" />
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/5 blur-[140px] rounded-full -z-10" />
@@ -60,8 +87,8 @@ export function ProductDetail() {
                                 key={i}
                                 onClick={() => setSelectedImageIndex(i)}
                                 className={cn(
-                                    "aspect-square rounded-xl border-2 transition-all p-1.5 bg-white/5",
-                                    selectedImageIndex === i ? "border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.3)]" : "border-white/5 hover:border-white/20"
+                                    "aspect-square rounded-xl border-2 transition-all p-1.5 bg-black/5 dark:bg-white/5",
+                                    selectedImageIndex === i ? "border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.3)]" : "border-black/10 dark:border-white/5 hover:border-black/30 dark:hover:border-white/20"
                                 )}
                             >
                                 <img 
@@ -76,7 +103,7 @@ export function ProductDetail() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="relative flex-1 group aspect-square rounded-[2rem] overflow-hidden border border-white/5 bg-white/[0.02] backdrop-blur-3xl p-6 md:p-10 order-1 md:order-2"
+                        className="relative flex-1 group aspect-square rounded-[2rem] overflow-hidden border border-black/10 dark:border-white/5 bg-white/80 dark:bg-white/[0.02] backdrop-blur-3xl p-6 md:p-10 order-1 md:order-2"
                     >
                         <img 
                             src={product.image.startsWith('/assets') ? `https://picsum.photos/seed/${product.id}/1200/1200` : product.image} 
@@ -125,7 +152,7 @@ export function ProductDetail() {
                             </div>
                         </div>
 
-                        <p className="text-white/50 leading-relaxed text-sm pt-2">
+                        <p className="text-black/60 dark:text-white/50 leading-relaxed text-sm pt-2">
                             {product.description}
                         </p>
                     </div>
@@ -166,20 +193,20 @@ export function ProductDetail() {
                         </a>
                         <a 
                             href="tel:+8801813065665"
-                            className="px-8 py-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-white/10 transition-all backdrop-blur-md text-center flex items-center justify-center gap-2"
+                            className="px-8 py-4 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-black dark:text-white font-bold hover:bg-black/10 dark:hover:bg-white/10 transition-all backdrop-blur-md text-center flex items-center justify-center gap-2"
                         >
                             <Zap size={18} className="text-blue-500" />
                             Call to Inquire
                         </a>
                     </div>
 
-                    <div className="pt-6 border-t border-white/5">
+                    <div className="pt-6 border-t border-black/5 dark:border-white/5">
                         <div className="flex items-center gap-6 justify-center sm:justify-start">
-                            <div className="flex items-center gap-2 text-[9px] font-bold text-white/40 uppercase tracking-widest">
+                            <div className="flex items-center gap-2 text-[9px] font-bold text-black/40 dark:text-white/40 uppercase tracking-widest">
                                 <RotateCcw size={12} className="text-blue-500" />
                                 30-Day Evaluation
                             </div>
-                            <div className="flex items-center gap-2 text-[9px] font-bold text-white/40 uppercase tracking-widest">
+                            <div className="flex items-center gap-2 text-[9px] font-bold text-black/40 dark:text-white/40 uppercase tracking-widest">
                                 <ShieldCheck size={12} className="text-blue-500" />
                                 Secure Encryption
                             </div>

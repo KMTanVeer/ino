@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, ShoppingCart, Menu, X, User, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Search, Menu, X, ArrowRight, Sun, Moon } from 'lucide-react';
 import { cn } from '@/src/components/common/GlassContainer.tsx';
 import { useNavigate } from 'react-router-dom';
 import { BrandLogo } from '@/src/components/common/BrandLogo.tsx';
+import { useTheme } from '@/src/context/ThemeContext.tsx';
 
 const NAV_LINKS = [
   { name: 'Home', path: '/' },
@@ -14,6 +15,7 @@ const NAV_LINKS = [
 ];
 
 export function Navbar() {
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -78,6 +80,13 @@ export function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center gap-5">
+          <button
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            className="text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white transition-colors"
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           <button 
             onClick={() => setIsSearchOpen(true)}
             className="text-black/70 dark:text-white/70 hover:text-black dark:hover:text-white transition-colors"
