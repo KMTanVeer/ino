@@ -110,6 +110,25 @@ export function Home() {
 
   const nextBanner = () => setActiveBanner((prev) => (prev + 1) % BANNERS.length);
   const prevBanner = () => setActiveBanner((prev) => (prev - 1 + BANNERS.length) % BANNERS.length);
+  const isBlueBanner = BANNERS[activeBanner].accent === 'blue';
+  const bannerAccentOverlayClass = isBlueBanner ? 'bg-blue-600/10 dark:bg-blue-600/5' : 'bg-purple-600/10 dark:bg-purple-600/5';
+  const bannerAccentTextClass = isBlueBanner ? 'text-blue-500/90' : 'text-purple-500/90';
+  const bannerAccentDotClass = isBlueBanner ? 'bg-blue-500' : 'bg-purple-500';
+  const bannerAccentButtonClass = isBlueBanner
+    ? 'bg-blue-600 hover:bg-blue-500 shadow-[0_0_40px_rgba(37,99,235,0.3)] hover:shadow-[0_0_60px_rgba(37,99,235,0.5)]'
+    : 'bg-purple-600 hover:bg-purple-500 shadow-[0_0_40px_rgba(147,51,234,0.3)] hover:shadow-[0_0_60px_rgba(147,51,234,0.5)]';
+  const isBlueShowcase = heroShowcase[heroShowcaseIndex].color === 'blue';
+  const showcaseGlowClass = isBlueShowcase ? 'bg-blue-500/10' : 'bg-purple-500/10';
+  const showcaseBadgeClass = isBlueShowcase
+    ? 'bg-blue-600/20 border-blue-500/30 text-blue-400'
+    : 'bg-purple-600/20 border-purple-500/30 text-purple-400';
+  const showcaseDotPrimaryClass = isBlueShowcase ? 'bg-blue-500' : 'bg-purple-500';
+  const showcaseDotSecondaryClass = isBlueShowcase ? 'bg-blue-500/30' : 'bg-purple-500/30';
+  const showcaseCategoryClass = isBlueShowcase ? 'text-blue-400/60' : 'text-purple-400/60';
+  const showcaseFrameClass = 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm';
+  const showcaseImageClass = 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
+  const bannerOrderButtonBaseClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-sm md:text-base';
+  const bannerDetailsButtonClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base';
 
   return (
     <div className="relative overflow-hidden bg-white dark:bg-black transition-colors duration-300">
@@ -221,32 +240,32 @@ export function Home() {
               >
                 <div className="relative group w-[400px]">
                   {/* Shadow/Glow behind product */}
-                  <div className={`absolute inset-0 bg-${heroShowcase[heroShowcaseIndex].color}-500/10 blur-[120px] rounded-full opacity-40 group-hover:opacity-60 transition-opacity`} />
+                  <div className={`absolute inset-0 ${showcaseGlowClass} blur-[120px] rounded-full opacity-40 group-hover:opacity-60 transition-opacity`} />
                   
                   <div className="relative flex flex-col items-center text-center">
-                    <div className="relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm">
+                    <div className={showcaseFrameClass}>
                       <img 
                         src={heroShowcase[heroShowcaseIndex].image} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
-                        className="w-full h-full object-cover rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110"
+                        className={showcaseImageClass}
                         referrerPolicy="no-referrer"
                       />
                     </div>
 
                     <div className="space-y-3">
                       <div className="flex items-center justify-center gap-3">
-                         <span className={`px-2 py-0.5 rounded bg-${heroShowcase[heroShowcaseIndex].color}-600/20 border border-${heroShowcase[heroShowcaseIndex].color}-500/30 text-[10px] font-black text-${heroShowcase[heroShowcaseIndex].color}-400 uppercase tracking-widest`}>
+                         <span className={`px-2 py-0.5 rounded border text-[10px] font-black uppercase tracking-widest ${showcaseBadgeClass}`}>
                            {heroShowcase[heroShowcaseIndex].tag}
-                         </span>
-                         <div className="flex gap-1.5">
-                          <div className={`w-1.5 h-1.5 rounded-full bg-${heroShowcase[heroShowcaseIndex].color}-500 animate-pulse`} />
-                          <div className={`w-1.5 h-1.5 rounded-full bg-${heroShowcase[heroShowcaseIndex].color}-500/30`} />
-                        </div>
-                      </div>
+                          </span>
+                          <div className="flex gap-1.5">
+                          <div className={`w-1.5 h-1.5 rounded-full ${showcaseDotPrimaryClass} animate-pulse`} />
+                          <div className={`w-1.5 h-1.5 rounded-full ${showcaseDotSecondaryClass}`} />
+                         </div>
+                       </div>
                       <h4 className="text-3xl font-black text-black dark:text-white tracking-tight leading-tight">
                         {heroShowcase[heroShowcaseIndex].name}
                       </h4>
-                      <p className={`text-xs text-${heroShowcase[heroShowcaseIndex].color}-400/60 font-black uppercase tracking-[0.4em]`}>
+                      <p className={`text-xs ${showcaseCategoryClass} font-black uppercase tracking-[0.4em]`}>
                         {heroShowcase[heroShowcaseIndex].category}
                       </p>
                     </div>
@@ -278,7 +297,7 @@ export function Home() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/45 dark:from-black dark:via-black/80 dark:to-transparent" />
-              <div className={`absolute inset-0 bg-${BANNERS[activeBanner].accent}-600/10 dark:bg-${BANNERS[activeBanner].accent}-600/5 mix-blend-multiply dark:mix-blend-overlay`} />
+              <div className={`absolute inset-0 ${bannerAccentOverlayClass} mix-blend-multiply dark:mix-blend-overlay`} />
             </div>
 
             <div className="container mx-auto px-6 h-full flex items-center relative z-10">
@@ -291,7 +310,7 @@ export function Home() {
                 >
                   <h2 className="text-4xl md:text-7xl font-bold text-black dark:text-white tracking-tighter leading-tight">
                     {BANNERS[activeBanner].title.split(' ').map((word, i) => (
-                      <span key={i} className={i >= 2 ? `text-${BANNERS[activeBanner].accent}-500/90` : ''}>
+                      <span key={i} className={i >= 2 ? bannerAccentTextClass : ''}>
                         {word}{' '}
                       </span>
                     ))}
@@ -309,7 +328,7 @@ export function Home() {
                 >
                   {BANNERS[activeBanner].features.map((feature, i) => (
                     <div key={i} className="flex items-center gap-3">
-                      <div className={`w-2 h-2 rounded-full bg-${BANNERS[activeBanner].accent}-500 animate-pulse`} />
+                      <div className={`w-2 h-2 rounded-full ${bannerAccentDotClass} animate-pulse`} />
                       <span className="text-sm md:text-base text-black/65 dark:text-white/45 tracking-wider uppercase font-bold">{feature}</span>
                     </div>
                   ))}
@@ -326,13 +345,13 @@ export function Home() {
                       href="https://wa.me/8801813065665"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`px-8 py-4 md:px-10 md:py-5 rounded-xl bg-${BANNERS[activeBanner].accent}-600 text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(37,99,235,0.3)] hover:shadow-[0_0_60px_rgba(37,99,235,0.5)] text-sm md:text-base`}
+                      className={`${bannerOrderButtonBaseClass} ${bannerAccentButtonClass}`}
                     >
                       Order Now
                     </a>
                     <Link 
                       to={`/product/${BANNERS[activeBanner].id}`}
-                      className="px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base"
+                      className={bannerDetailsButtonClass}
                     >
                       More Details
                     </Link>
@@ -369,7 +388,7 @@ export function Home() {
             <button
               key={i}
               onClick={() => setActiveBanner(i)}
-               className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? 'w-20 bg-blue-500' : 'w-8 bg-black/20 dark:bg-white/20'}`}
+              className={`h-1 rounded-full transition-all duration-500 ${activeBanner === i ? 'w-20 bg-blue-500' : 'w-8 bg-black/20 dark:bg-white/20'}`}
             />
           ))}
         </div>
