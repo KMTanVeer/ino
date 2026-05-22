@@ -32,7 +32,7 @@ export const CATEGORIES: Category[] = [
     id: 'networking',
     name: 'Networking',
     icon: Network,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
+    image: 'https://www.cisco.com/c/dam/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742283_1.jpg',
     description: 'Enterprise networking solutions, ISP equipment, and high-speed connectivity.'
   },
   {
@@ -59,7 +59,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-performance 10G Ethernet adapter from Huawei, optimized for data-intensive workloads and enterprise networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
     rating: 4.8,
     specs: {
       'Interface': 'SFP+',
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Original Intel X710 series network adapter. The industry standard for reliability and performance in high-speed networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
     rating: 5.0,
     specs: {
       'Controller': 'Intel X710',
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Efficient and robust 10G networking from Supermicro. Perfect for server integration.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
     rating: 4.5,
     specs: {
       'Speed': '10 Gbps',
@@ -104,7 +104,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-speed 10G Lan card from Mellanox, known for low latency and high throughput.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
     rating: 4.7,
     specs: {
       'Speed': '10 Gbps',
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Extreme speed for enterprise backbones. Intel 40G network adapter ensures zero bottlenecking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://images.newegg.com/productimage/nb640/14-131-193-S01.jpg',
     rating: 4.9,
     specs: {
       'Speed': '40 Gbps',
@@ -132,7 +132,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Performance-driven 40G networking hardware from Mellanox.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://images.newegg.com/productimage/nb640/14-131-193-S01.jpg',
     rating: 4.6,
     specs: {
       'Speed': '40 Gbps',
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'The sweet spot between 10G and 40G. 25G Broadcom adapter for modern data centers.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://img-en.fs.com/images/product/202009/10/25g-dual-port-sfp28-pcie3-8-nic-intel-xxv710-1_37736.jpg',
     rating: 4.4,
     specs: {
       'Speed': '25 Gbps',
@@ -158,7 +158,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Intel 25G Ethernet adapter. High efficiency, high reliability.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+    image: 'https://img-en.fs.com/images/product/202009/10/25g-dual-port-sfp28-pcie3-8-nic-intel-xxv710-1_37736.jpg',
     rating: 4.8,
     specs: {
       'Speed': '25 Gbps',
@@ -285,7 +285,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Comprehensive high-density 4-node cluster solution. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Wikimedia-Server.jpg',
+    image: 'https://www.supermicro.com/assets/images/products/System/2U/621/621BTR-and-621BTS_frontangle.png',
     rating: 5.0,
     specs: {
       'Architecture': '4-Node (BigTwin)',
@@ -444,7 +444,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-performance Data Center switch with 48 x 10/25-Gbps SFP28 ports and 6 x 40/100-Gbps QSFP28 ports.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
+    image: 'https://www.cisco.com/c/dam/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742283_1.jpg',
     rating: 4.9,
     specs: {
       '10G Ports': '48 x 10G SFP+',

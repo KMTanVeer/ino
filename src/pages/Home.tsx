@@ -12,7 +12,7 @@ const BANNERS = [
     id: 'cisco-nexus-93180yc-ex',
     title: 'Cisco Nexus N9K-C93180YC-EX',
     subtitle: 'High-Performance Data Center Switching for Modern Enterprise Infrastructure',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
+    image: 'https://www.cisco.com/c/dam/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742283_1.jpg',
     features: [
       '100G High-Speed Networking',
       'Enterprise Grade Reliability',
@@ -70,7 +70,7 @@ export function Home() {
       name: 'Nexus N9K-C93180YC',
       category: 'Data Center Switch',
       tag: 'ULTRA LOW LATENCY',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
+      image: 'https://www.cisco.com/c/dam/en/us/products/collateral/switches/nexus-9000-series-switches/datasheet-c78-742283_1.jpg',
       color: 'blue'
     },
     {
@@ -78,7 +78,7 @@ export function Home() {
       name: 'Intel X710-DA2',
       category: '10G Ethernet Adapter',
       tag: 'EXTREME RELIABILITY',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
       color: 'blue'
     }
   ];
