@@ -25,28 +25,28 @@ export const CATEGORIES: Category[] = [
     id: 'servers',
     name: 'Servers',
     icon: Server,
-    image: 'https://images.unsplash.com/photo-1597852074351-7890b396781f?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg',
     description: 'Powerful server solutions for data centers and enterprise infrastructure.'
   },
   {
     id: 'networking',
     name: 'Networking',
     icon: Network,
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
     description: 'Enterprise networking solutions, ISP equipment, and high-speed connectivity.'
   },
   {
     id: 'computing',
     name: 'Computing',
     icon: Cpu,
-    image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/CPU_closeup_on_motherboard.jpg',
     description: 'High-performance RAM, processors, and PC accessories.'
   },
   {
     id: 'gaming',
     name: 'Gaming',
     icon: Gamepad2,
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg',
     description: 'Next-gen gaming gear, mechanical keyboards, and RGB accessories.'
   }
 ];
@@ -59,15 +59,14 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-performance 10G Ethernet adapter from Huawei, optimized for data-intensive workloads and enterprise networking.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.8,
     specs: {
       'Interface': 'SFP+',
       'Speed': '10 Gbps',
       'Architecture': 'PCIe Gen 3',
       'Ports': '1x SFP+'
-    },
-    isFeatured: true
+    }
   },
   {
     id: 'lan-intel-x710-10g',
@@ -75,7 +74,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Original Intel X710 series network adapter. The industry standard for reliability and performance in high-speed networking.',
-    image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 5.0,
     specs: {
       'Controller': 'Intel X710',
@@ -91,7 +90,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Efficient and robust 10G networking from Supermicro. Perfect for server integration.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.5,
     specs: {
       'Speed': '10 Gbps',
@@ -105,7 +104,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-speed 10G Lan card from Mellanox, known for low latency and high throughput.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.7,
     specs: {
       'Speed': '10 Gbps',
@@ -119,7 +118,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Extreme speed for enterprise backbones. Intel 40G network adapter ensures zero bottlenecking.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.9,
     specs: {
       'Speed': '40 Gbps',
@@ -133,7 +132,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Performance-driven 40G networking hardware from Mellanox.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.6,
     specs: {
       'Speed': '40 Gbps',
@@ -146,7 +145,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'The sweet spot between 10G and 40G. 25G Broadcom adapter for modern data centers.',
-    image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.4,
     specs: {
       'Speed': '25 Gbps',
@@ -159,7 +158,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Intel 25G Ethernet adapter. High efficiency, high reliability.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
     rating: 4.8,
     specs: {
       'Speed': '25 Gbps',
@@ -173,14 +172,15 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Genuine Cisco SFP-10G-SR module for short-range fiber connections.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/1000BASE-SX_Transceivers-SFP.jpg',
     rating: 4.9,
     specs: {
       'Type': 'SFP+',
       'Speed': '10 Gbps',
       'Reach': '300m',
       'Cable Type': 'Multimode Fiber'
-    }
+    },
+    isFeatured: true
   },
   {
     id: 'sfp-huawei-10g',
@@ -188,7 +188,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Huawei high-performance 10G SFP module for enterprise switches.',
-    image: 'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/1000BASE-SX_Transceivers-SFP.jpg',
     rating: 4.7,
     specs: {
       'Type': 'SFP+',
@@ -201,7 +201,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Cisco QSFP-40G series transceivers for high-density 40G networking.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
     rating: 4.8,
     specs: {
       'Type': 'QSFP+',
@@ -214,7 +214,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-speed 40G QSFP module from Huawei.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
     rating: 4.5,
     specs: {
       'Type': 'QSFP+',
@@ -227,7 +227,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Low-power, high-reliability 40G SFP module from Mellanox.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
     rating: 4.6,
     specs: {
       'Type': 'QSFP+',
@@ -240,14 +240,13 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Next-generation 100G connectivity. The Nokia QSFP28 module is built for the future of networking.',
-    image: 'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
     rating: 5.0,
     specs: {
       'Type': 'QSFP28',
       'Speed': '100 Gbps',
       'Connector': 'LC'
-    },
-    isFeatured: true
+    }
   },
   // Misc
   {
@@ -256,7 +255,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-quality 3-meter fiber optic patch cord for server and switch connectivity.',
-    image: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/LC_connector_plug_and_socket.jpg',
     rating: 4.6,
     specs: {
       'Length': '3 Meters',
@@ -270,13 +269,14 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Supermicro Titanium/Platinum level redundant power supply unit for high-availability systems.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Dell_PowerEdge_2950_server_hot-swap_PSUs.jpg',
     rating: 4.7,
     specs: {
       'Power': '750W',
       'Efficiency': 'Titanium/Platinum EPP',
       'Form Factor': 'Server Redundant'
-    }
+    },
+    isFeatured: true
   },
   // Servers
   {
@@ -285,14 +285,13 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Comprehensive high-density 4-node cluster solution. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
-    image: 'https://images.unsplash.com/photo-1558489080-00d07a6833fe?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Wikimedia-Server.jpg',
     rating: 5.0,
     specs: {
       'Architecture': '4-Node (BigTwin)',
       'Nodes': '4 independent systems',
       'Note': 'Requires 8 processors'
-    },
-    isFeatured: true
+    }
   },
   {
     id: 'processor-72core',
@@ -300,7 +299,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'High-core-count enterprise processor for compute-intensive virtualization and data processing.',
-    image: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/54/Intel_Xeon_4323A795.jpg',
     rating: 4.5,
     specs: {
       'Cores': '72 Cores',
@@ -313,7 +312,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Powerful 1U rack server. Configure with 72 cores for massive multi-threaded performance. Note: Price excludes RAM.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 4.8,
     specs: {
       'Model': 'PowerEdge R630',
@@ -328,14 +327,13 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Upgraded 88-core configuration of the legendary R630. Reliable, fast, and dense. Note: Price excludes RAM.',
-    image: 'https://images.unsplash.com/photo-1558489106-2d6ec42da696?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 4.9,
     specs: {
       'Model': 'PowerEdge R630',
       'Cores': '88 Cores',
       'Form Factor': '1U Rack'
-    },
-    isFeatured: true
+    }
   },
   {
     id: 'dell-r640-72c',
@@ -343,7 +341,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Modern 1U flagship server. Includes Railkit and Bezel. Unmatched performance and management. Note: Price excludes RAM.',
-    image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 5.0,
     specs: {
       'Model': 'PowerEdge R640',
@@ -359,7 +357,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: '80-core high-performance variant of the R640. Ideal for cloud hosting and large database clusters. Includes Railkit and Bezel.',
-    image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 4.9,
     specs: {
       'Model': 'PowerEdge R640',
@@ -373,7 +371,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'The beast - 96 Core Dell R640. Maximum compute density in 1U. Includes Railkit and Bezel. Note: Price excludes RAM.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 5.0,
     specs: {
       'Model': 'PowerEdge R640',
@@ -387,14 +385,15 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: '2U versatile server powerhouse. 72 Cores for expandability and high-performance I/O. Includes Railkit and Bezel. Note: Price excludes RAM.',
-    image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
     rating: 4.8,
     specs: {
       'Model': 'PowerEdge R730',
       'Cores': '72 Cores',
       'Form Factor': '2U Rack',
       'Inclusions': 'Railkit, Bezel'
-    }
+    },
+    isFeatured: true
   },
   // RAM
   {
@@ -403,7 +402,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Reliable DDR4 memory for servers and enterprise workstations.',
-    image: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
     rating: 4.4,
     specs: {
       'Capacity': '8GB',
@@ -417,7 +416,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'High-density DDR4 memory modules for scaling your server infrastructure.',
-    image: 'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
     rating: 4.6,
     specs: {
       'Capacity': '16GB',
@@ -430,7 +429,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Elite 32GB DDR4 modules for mission-critical applications requiring maximum bandwidth.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
     rating: 5.0,
     specs: {
       'Capacity': '32GB',
@@ -445,14 +444,15 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-performance Data Center switch with 48 x 10/25-Gbps SFP28 ports and 6 x 40/100-Gbps QSFP28 ports.',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
     rating: 4.9,
     specs: {
       '10G Ports': '48 x 10G SFP+',
       '25G Ports': '6 x 25G SFP28',
       '40G Ports': '6 x 40G QSFP+',
       'Capacity': '2.56 Tbps'
-    }
+    },
+    isFeatured: true
   },
   {
     id: 'juniper-mx80',
@@ -460,13 +460,14 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Carrier-grade universal routing platform for enterprise and service provider applications.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+    image: 'https://juniper.net/assets/img/products/1500x283/MX80_fr_med.png',
     rating: 4.8,
     specs: {
       '10G Ports': 'Up to 20 x 10G',
       '40G Ports': 'Up to 8 x 40G',
       '100G Ports': 'Up to 4 x 100G',
       'Capacity': '160 Tbps'
-    }
+    },
+    isFeatured: true
   }
 ];

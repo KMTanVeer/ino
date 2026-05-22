@@ -12,7 +12,7 @@ const BANNERS = [
     id: 'cisco-nexus-93180yc-ex',
     title: 'Cisco Nexus N9K-C93180YC-EX',
     subtitle: 'High-Performance Data Center Switching for Modern Enterprise Infrastructure',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
     features: [
       '100G High-Speed Networking',
       'Enterprise Grade Reliability',
@@ -25,7 +25,7 @@ const BANNERS = [
     id: 'juniper-mx80',
     title: 'Juniper MX80 Universal Router',
     subtitle: 'Reliable Routing Performance for Scalable Enterprise Networks',
-    image: 'https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=2674&auto=format&fit=crop',
+    image: 'https://juniper.net/assets/img/products/1500x283/MX80_fr_med.png',
     features: [
       'Carrier Grade Stability',
       'Advanced Routing Performance',
@@ -62,7 +62,7 @@ export function Home() {
       name: 'PowerEdge R640',
       category: 'Enterprise Server',
       tag: 'MISSION CRITICAL',
-      image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=800&auto=format&fit=crop',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
       color: 'purple'
     },
     {
@@ -70,7 +70,7 @@ export function Home() {
       name: 'Nexus N9K-C93180YC',
       category: 'Data Center Switch',
       tag: 'ULTRA LOW LATENCY',
-      image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Nexus_3064_switch.jpg',
       color: 'blue'
     },
     {
@@ -78,7 +78,7 @@ export function Home() {
       name: 'Intel X710-DA2',
       category: '10G Ethernet Adapter',
       tag: 'EXTREME RELIABILITY',
-      image: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=800&auto=format&fit=crop',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/AllnetALL0333CPCIeGigabitNIC.jpg',
       color: 'blue'
     }
   ];
@@ -160,7 +160,7 @@ export function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-600/20 blur-[130px] rounded-full animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-[700px] h-[700px] bg-purple-600/10 blur-[150px] rounded-full animate-pulse delay-700" />
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187530221-8930ad3b913c?q=80&w=2672&auto=format&fit=crop')] bg-cover bg-center opacity-5 dark:opacity-10 mix-blend-overlay scale-110" />
+          <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg')] bg-cover bg-center opacity-5 dark:opacity-10 mix-blend-overlay scale-110" />
         </div>
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -456,7 +456,7 @@ export function Home() {
       <section className="py-24 relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <GlassContainer className="p-12 md:p-24 bg-blue-600/5 overflow-hidden group">
-            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
+            <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
             <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
               <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white tracking-tight">Ready to Upgrade Your <br />Infrastructure?</h2>
               <p className="text-black/70 dark:text-white/60 text-lg">
