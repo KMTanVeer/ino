@@ -62,7 +62,7 @@ export function Home() {
       name: 'PowerEdge R640',
       category: 'Enterprise Server',
       tag: 'MISSION CRITICAL',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+      image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/poweredge-r640-server.jpg',
       color: 'purple'
     },
     {
@@ -78,7 +78,7 @@ export function Home() {
       name: 'Intel X710-DA2',
       category: '10G Ethernet Adapter',
       tag: 'EXTREME RELIABILITY',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
+      image: 'https://c1.neweggimages.com/ProductImage/6B2K_1_202303011149287110.jpg',
       color: 'blue'
     }
   ];

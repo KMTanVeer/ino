@@ -59,7 +59,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-performance 10G Ethernet adapter from Huawei, optimized for data-intensive workloads and enterprise networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
+    image: 'https://support.huawei.com/hedex-img/pcqrx_image_en_00221507.png',
     rating: 4.8,
     specs: {
       'Interface': 'SFP+',
@@ -74,7 +74,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Original Intel X710 series network adapter. The industry standard for reliability and performance in high-speed networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
+    image: 'https://c1.neweggimages.com/ProductImage/6B2K_1_202303011149287110.jpg',
     rating: 5.0,
     specs: {
       'Controller': 'Intel X710',
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Efficient and robust 10G networking from Supermicro. Perfect for server integration.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
+    image: 'https://cdn.wiredzone.com/images/P/32025991.jpg',
     rating: 4.5,
     specs: {
       'Speed': '10 Gbps',
@@ -104,7 +104,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-speed 10G Lan card from Mellanox, known for low latency and high throughput.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Intel_X520-DA2_network_card_top_view.jpg',
+    image: 'https://images.nvidia.com/aem-dam/en-zz/Solutions/networking/ethernet/connectx-3-adapters/connectx-3-ethernet-card.png',
     rating: 4.7,
     specs: {
       'Speed': '10 Gbps',
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Extreme speed for enterprise backbones. Intel 40G network adapter ensures zero bottlenecking.',
-    image: 'https://images.newegg.com/productimage/nb640/14-131-193-S01.jpg',
+    image: 'https://www.serverorbit.com/wp-content/uploads/2022/12/Intel-XL710-QDA2-Dual-Port-40GbE-PCIe-NIC-1.jpg',
     rating: 4.9,
     specs: {
       'Speed': '40 Gbps',
@@ -145,7 +145,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'The sweet spot between 10G and 40G. 25G Broadcom adapter for modern data centers.',
-    image: 'https://img-en.fs.com/images/product/202009/10/25g-dual-port-sfp28-pcie3-8-nic-intel-xxv710-1_37736.jpg',
+    image: 'https://img-en.fs.com/file/common/4d154a8622e62b14f7b9b779bee88919.jpg',
     rating: 4.4,
     specs: {
       'Speed': '25 Gbps',
@@ -240,7 +240,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Next-generation 100G connectivity. The Nokia QSFP28 module is built for the future of networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
+    image: 'https://img-en.fs.com/file/user_product/2b5e4d7dbd944cd98441d1bf2f60b1d9.jpg',
     rating: 5.0,
     specs: {
       'Type': 'QSFP28',
@@ -284,7 +284,7 @@ export const PRODUCTS: Product[] = [
     name: 'Supermicro 4-Node Cluster Server',
     category: 'servers',
     price: 0,
-    description: 'Comprehensive high-density 4-node cluster solution. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
+    description: 'Supermicro BigTwin 621BTR/621BTS 2U 4-node chassis with high-density compute. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
     image: 'https://www.supermicro.com/assets/images/products/System/2U/621/621BTR-and-621BTS_frontangle.png',
     rating: 5.0,
     specs: {
@@ -312,7 +312,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Powerful 1U rack server. Configure with 72 cores for massive multi-threaded performance. Note: Price excludes RAM.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/r630-bezel-500x500.jpg',
     rating: 4.8,
     specs: {
       'Model': 'PowerEdge R630',
@@ -327,7 +327,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Upgraded 88-core configuration of the legendary R630. Reliable, fast, and dense. Note: Price excludes RAM.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/r630-bezel-500x500.jpg',
     rating: 4.9,
     specs: {
       'Model': 'PowerEdge R630',
@@ -341,7 +341,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'Modern 1U flagship server. Includes Railkit and Bezel. Unmatched performance and management. Note: Price excludes RAM.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/poweredge-r640-server.jpg',
     rating: 5.0,
     specs: {
       'Model': 'PowerEdge R640',
@@ -357,7 +357,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: '80-core high-performance variant of the R640. Ideal for cloud hosting and large database clusters. Includes Railkit and Bezel.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/poweredge-r640-server.jpg',
     rating: 4.9,
     specs: {
       'Model': 'PowerEdge R640',
@@ -371,7 +371,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: 'The beast - 96 Core Dell R640. Maximum compute density in 1U. Includes Railkit and Bezel. Note: Price excludes RAM.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/poweredge-r640-server.jpg',
     rating: 5.0,
     specs: {
       'Model': 'PowerEdge R640',
@@ -385,7 +385,7 @@ export const PRODUCTS: Product[] = [
     category: 'servers',
     price: 0,
     description: '2U versatile server powerhouse. 72 Cores for expandability and high-performance I/O. Includes Railkit and Bezel. Note: Price excludes RAM.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dell_PowerEdge_R610_and_R720.jpg',
+    image: 'https://i.dell.com/sites/csimages/Video_Imagery/all/poweredge-r730-hero-front.png',
     rating: 4.8,
     specs: {
       'Model': 'PowerEdge R730',
