@@ -253,7 +253,6 @@ export function Home() {
                         src={heroShowcase[heroShowcaseIndex].image} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
                         className={showcaseImageClass}
-                        referrerPolicy="no-referrer"
                       />
                     </div>
 
@@ -299,7 +298,6 @@ export function Home() {
                 src={BANNERS[activeBanner].image} 
                 alt={BANNERS[activeBanner].title}
                 className="w-full h-full object-cover opacity-30 dark:opacity-20 scale-105"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/45 dark:from-black dark:via-black/80 dark:to-transparent" />
               <div className={`absolute inset-0 ${bannerAccentOverlayClass} mix-blend-multiply dark:mix-blend-overlay`} />

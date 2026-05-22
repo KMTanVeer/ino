@@ -51,7 +51,6 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
               </div>

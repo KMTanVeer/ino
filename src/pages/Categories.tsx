@@ -37,7 +37,6 @@ export function Categories() {
                     src={category.image} 
                     alt={category.name} 
                     className="absolute inset-0 w-full h-full object-cover opacity-20 dark:opacity-30 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-40 dark:group-hover:opacity-50" 
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-black via-white/40 dark:via-black/40 to-transparent" />
                   <div className="absolute inset-0 p-8 flex flex-col justify-end gap-2">

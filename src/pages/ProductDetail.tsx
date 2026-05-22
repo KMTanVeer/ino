@@ -109,7 +109,6 @@ export function ProductDetail() {
                             src={product.image.startsWith('/assets') ? `https://picsum.photos/seed/${product.id}/1200/1200` : product.image} 
                             alt={product.name} 
                             className="w-full h-full object-contain mix-blend-screen drop-shadow-[0_20px_40px_rgba(59,130,246,0.25)] group-hover:scale-105 transition-transform duration-700"
-                            referrerPolicy="no-referrer"
                         />
                         
                         <div className="absolute top-5 right-5 flex flex-col gap-2">
