@@ -4,6 +4,7 @@ import { Star, MessageCircle, Eye, Search } from 'lucide-react';
 import { type Product } from '@/src/data/products.ts';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
 import { QuickViewModal } from '@/src/components/common/QuickViewModal.tsx';
+import { resolveImage } from '@/src/utils/images.ts';
 import React, { useState } from 'react';
 
 interface ProductCardProps {
@@ -43,7 +44,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0, on
         <div className="relative aspect-square overflow-hidden rounded-lg mb-4 bg-white/[0.03]">
           <Link to={`/product/${product.id}`} className="block w-full h-full">
             <img
-              src={product.image}
+              src={resolveImage(product.image)}
               alt={product.name}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

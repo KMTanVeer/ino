@@ -6,6 +6,7 @@ import { PRODUCTS, type Product } from '@/src/data/products.ts';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
 import { ProductCard } from '@/src/components/common/ProductCard.tsx';
 import { SEO } from '@/src/components/common/SEO.tsx';
+import { resolveImage } from '@/src/utils/images.ts';
 
 export function ProductDetail() {
   const { id } = useParams();
@@ -34,6 +35,7 @@ export function ProductDetail() {
   }
 
   const relatedProducts = PRODUCTS.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+  const resolvedImage = resolveImage(product.image);
 
   return (
     <div className="pt-32 pb-24 min-h-screen relative overflow-hidden">
@@ -42,6 +44,7 @@ export function ProductDetail() {
           description={product.description}
           keywords={`${product.name}, ${product.category}, networking equipment, enterprise router, switch, lan card, ssd`}
           url={`https://inovexabd.com/product/${product.id}`}
+          image={resolvedImage}
           type="product"
           structuredData={{
             '@context': 'https://schema.org',
@@ -49,7 +52,7 @@ export function ProductDetail() {
             name: product.name,
             description: product.description,
             category: product.category,
-            image: product.image,
+            image: resolvedImage,
             brand: {
               '@type': 'Brand',
               name: 'Inovexa Technology',
@@ -92,7 +95,7 @@ export function ProductDetail() {
                                 )}
                             >
                                 <img 
-                                  src={`https://picsum.photos/seed/${product.id + i}/200/200`} 
+                                  src={resolvedImage} 
                                   alt="preview" 
                                   className="w-full h-full object-cover rounded-lg opacity-60 transition-opacity hover:opacity-100" 
                                 />
@@ -106,7 +109,7 @@ export function ProductDetail() {
                         className="relative flex-1 group aspect-square rounded-[2rem] overflow-hidden border border-black/10 dark:border-white/5 bg-white/80 dark:bg-white/[0.02] backdrop-blur-3xl p-6 md:p-10 order-1 md:order-2"
                     >
                         <img 
-                            src={product.image.startsWith('/assets') ? `https://picsum.photos/seed/${product.id}/1200/1200` : product.image} 
+                            src={resolvedImage} 
                             alt={product.name} 
                             className="w-full h-full object-contain mix-blend-screen drop-shadow-[0_20px_40px_rgba(59,130,246,0.25)] group-hover:scale-105 transition-transform duration-700"
                         />

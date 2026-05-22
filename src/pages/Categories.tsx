@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CATEGORIES } from '@/src/data/products.ts';
 import { ChevronRight } from 'lucide-react';
 import { SEO } from '@/src/components/common/SEO.tsx';
+import { resolveImage } from '@/src/utils/images.ts';
 
 export function Categories() {
   return (
@@ -34,7 +35,7 @@ export function Categories() {
                   className="group relative block aspect-[16/10] overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/5 hover:border-blue-600 dark:hover:border-blue-500/50 transition-all"
                 >
                   <img 
-                    src={category.image} 
+                    src={resolveImage(category.image)} 
                     alt={category.name} 
                     className="absolute inset-0 w-full h-full object-cover opacity-20 dark:opacity-30 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-40 dark:group-hover:opacity-50" 
                   />

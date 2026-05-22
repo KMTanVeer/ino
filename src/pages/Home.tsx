@@ -5,6 +5,7 @@ import { PRODUCTS, CATEGORIES } from '@/src/data/products.ts';
 import { ProductCard } from '@/src/components/common/ProductCard.tsx';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
 import { SEO } from '@/src/components/common/SEO.tsx';
+import { resolveImage } from '@/src/utils/images.ts';
 import { useState, useEffect } from 'react';
 
 const BANNERS = [
@@ -160,7 +161,7 @@ export function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-600/20 blur-[130px] rounded-full animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-[700px] h-[700px] bg-purple-600/10 blur-[150px] rounded-full animate-pulse delay-700" />
-          <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg')] bg-cover bg-center opacity-5 dark:opacity-10 mix-blend-overlay scale-110" />
+          <div className="absolute inset-0 bg-[url('/images/placeholder.svg')] bg-cover bg-center opacity-5 dark:opacity-10 mix-blend-overlay scale-110" />
         </div>
 
         <div className="container mx-auto px-6 lg:px-12 relative z-10">
@@ -250,7 +251,7 @@ export function Home() {
                   <div className="relative flex flex-col items-center text-center">
                     <div className={showcaseFrameClass}>
                       <img 
-                        src={heroShowcase[heroShowcaseIndex].image} 
+                        src={resolveImage(heroShowcase[heroShowcaseIndex].image)} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
                         className={showcaseImageClass}
                       />
@@ -295,7 +296,7 @@ export function Home() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
               <img 
-                src={BANNERS[activeBanner].image} 
+                src={resolveImage(BANNERS[activeBanner].image)} 
                 alt={BANNERS[activeBanner].title}
                 className="w-full h-full object-cover opacity-30 dark:opacity-20 scale-105"
               />
@@ -454,7 +455,7 @@ export function Home() {
       <section className="py-24 relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <GlassContainer className="p-12 md:p-24 bg-blue-600/5 overflow-hidden group">
-            <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
+            <div className="absolute inset-0 bg-[url('/images/placeholder.svg')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
             <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
               <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white tracking-tight">Ready to Upgrade Your <br />Infrastructure?</h2>
               <p className="text-black/70 dark:text-white/60 text-lg">

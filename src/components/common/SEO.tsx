@@ -15,7 +15,7 @@ export function SEO({
   title = "Inovexa Technology | Enterprise IT Infrastructure & Networking Solutions", 
   description = "Inovexa Technology is Bangladesh's leading provider of next-generation IT infrastructure, enterprise networking, and datacenter solutions.", 
   keywords = "Inovexa, networking equipment, switches, routers, LAN card, SSD, servers, datacenter solutions, enterprise networking, Bangladesh",
-  image = "https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg",
+  image = "/images/placeholder.svg",
   url = "https://inovexabd.com",
   type = 'website',
   structuredData

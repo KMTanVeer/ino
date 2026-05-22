@@ -1,5 +1,7 @@
 import { LucideIcon, Network, Cpu, Server, Cable, Watch, Headphones, Gamepad2, Mouse, Keyboard, Smartphone, Zap } from 'lucide-react';
 
+const PLACEHOLDER_IMAGE = '/images/placeholder.svg';
+
 export interface Product {
   id: string;
   name: string;
@@ -25,7 +27,7 @@ export const CATEGORIES: Category[] = [
     id: 'servers',
     name: 'Servers',
     icon: Server,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Server_Rack_Front_View_2.jpg',
+    image: PLACEHOLDER_IMAGE,
     description: 'Powerful server solutions for data centers and enterprise infrastructure.'
   },
   {
@@ -39,14 +41,14 @@ export const CATEGORIES: Category[] = [
     id: 'computing',
     name: 'Computing',
     icon: Cpu,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/CPU_closeup_on_motherboard.jpg',
+    image: PLACEHOLDER_IMAGE,
     description: 'High-performance RAM, processors, and PC accessories.'
   },
   {
     id: 'gaming',
     name: 'Gaming',
     icon: Gamepad2,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Gaming_PC-Setup_-_Astaroth-_The_Completed_System.jpg',
+    image: PLACEHOLDER_IMAGE,
     description: 'Next-gen gaming gear, mechanical keyboards, and RGB accessories.'
   }
 ];
@@ -172,7 +174,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Genuine Cisco SFP-10G-SR module for short-range fiber connections.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/1000BASE-SX_Transceivers-SFP.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.9,
     specs: {
       'Type': 'SFP+',
@@ -188,7 +190,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Huawei high-performance 10G SFP module for enterprise switches.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7f/1000BASE-SX_Transceivers-SFP.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.7,
     specs: {
       'Type': 'SFP+',
@@ -201,7 +203,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Cisco QSFP-40G series transceivers for high-density 40G networking.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.8,
     specs: {
       'Type': 'QSFP+',
@@ -214,7 +216,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-speed 40G QSFP module from Huawei.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.5,
     specs: {
       'Type': 'QSFP+',
@@ -227,7 +229,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'Low-power, high-reliability 40G SFP module from Mellanox.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/QSFP-40G-SR4_Transceiver.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.6,
     specs: {
       'Type': 'QSFP+',
@@ -255,7 +257,7 @@ export const PRODUCTS: Product[] = [
     category: 'networking',
     price: 0,
     description: 'High-quality 3-meter fiber optic patch cord for server and switch connectivity.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/43/LC_connector_plug_and_socket.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.6,
     specs: {
       'Length': '3 Meters',
@@ -269,7 +271,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Supermicro Titanium/Platinum level redundant power supply unit for high-availability systems.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Dell_PowerEdge_2950_server_hot-swap_PSUs.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.7,
     specs: {
       'Power': '750W',
@@ -299,7 +301,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'High-core-count enterprise processor for compute-intensive virtualization and data processing.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/54/Intel_Xeon_4323A795.jpg',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.5,
     specs: {
       'Cores': '72 Cores',
@@ -402,7 +404,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Reliable DDR4 memory for servers and enterprise workstations.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.4,
     specs: {
       'Capacity': '8GB',
@@ -416,7 +418,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'High-density DDR4 memory modules for scaling your server infrastructure.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
+    image: PLACEHOLDER_IMAGE,
     rating: 4.6,
     specs: {
       'Capacity': '16GB',
@@ -429,7 +431,7 @@ export const PRODUCTS: Product[] = [
     category: 'computing',
     price: 0,
     description: 'Elite 32GB DDR4 modules for mission-critical applications requiring maximum bandwidth.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/16_GiB-DDR4-RAM-Riegel_RAM019FIX_Small_Crop_90_PCNT.png',
+    image: PLACEHOLDER_IMAGE,
     rating: 5.0,
     specs: {
       'Capacity': '32GB',

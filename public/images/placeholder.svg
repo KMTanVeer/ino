@@ -1,0 +1,25 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E1B4B" />
+      <stop offset="100%" stop-color="#0B1120" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="64" fill="url(#bg)" />
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="rgba(15, 23, 42, 0.55)" stroke="url(#accent)" stroke-width="2" />
+  <rect x="150" y="170" width="900" height="440" rx="36" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" />
+  <circle cx="240" cy="250" r="56" fill="rgba(56, 189, 248, 0.2)" stroke="rgba(56, 189, 248, 0.6)" stroke-width="2" />
+  <path d="M210 340H990C1017 340 1040 362 1040 390V590C1040 617 1017 640 990 640H210C183 640 160 617 160 590V390C160 362 183 340 210 340Z" fill="rgba(30, 41, 59, 0.6)" stroke="rgba(168, 85, 247, 0.5)" stroke-width="2" />
+  <path d="M210 590L400 430L550 540L710 410L990 590V640H210V590Z" fill="rgba(56, 189, 248, 0.3)" />
+  <text x="600" y="730" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="36" fill="rgba(226, 232, 240, 0.8)" letter-spacing="6">
+    INOVEXA TECHNOLOGY
+  </text>
+  <text x="600" y="785" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="18" fill="rgba(148, 163, 184, 0.7)" letter-spacing="4">
+    IMAGE PLACEHOLDER
+  </text>
+</svg>

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Star, Info, CheckCircle2 } from 'lucide-react';
 import { type Product } from '@/src/data/products.ts';
 import { GlassContainer } from '@/src/components/common/GlassContainer.tsx';
+import { resolveImage } from '@/src/utils/images.ts';
 
 interface QuickViewModalProps {
   product: Product | null;
@@ -48,7 +49,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
               {/* Product Image Area */}
               <div className="w-full md:w-1/2 relative bg-white/[0.02]">
                 <img
-                  src={product.image}
+                  src={resolveImage(product.image)}
                   alt={product.name}
                   className="w-full h-full object-cover aspect-square md:aspect-auto"
                 />
