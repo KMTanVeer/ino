@@ -26,7 +26,7 @@ npm install
 ```bash
 npm run dev
 ```
-The app runs on `http://localhost:3000` by default.
+The app runs on `http://localhost:3000` (configured in the Vite dev script).
 
 ### Production build
 ```bash

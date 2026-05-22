@@ -284,7 +284,7 @@ export const PRODUCTS: Product[] = [
     name: 'Supermicro 4-Node Cluster Server',
     category: 'servers',
     price: 0,
-    description: 'Supermicro BigTwin 621BTR/621BTS 2U 4-node chassis with high-density compute. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
+    description: 'Supermicro BigTwin 2U 4-node chassis with high-density compute. Includes chassis and motherboard. Total price with processors: 132,000 Taka.',
     image: 'https://www.supermicro.com/assets/images/products/System/2U/621/621BTR-and-621BTS_frontangle.png',
     rating: 5.0,
     specs: {
