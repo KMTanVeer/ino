@@ -103,7 +103,7 @@ export function ProductDetail() {
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="relative flex-1 group aspect-square rounded-[2rem] overflow-hidden border border-black/10 dark:border-white/5 bg-white/80 dark:bg-white/[0.02] backdrop-blur-3xl p-6 md:p-10 order-1 md:order-2"
+                        className="relative flex-1 group aspect-square rounded-[2rem] overflow-hidden glass p-6 md:p-10 order-1 md:order-2"
                     >
                         <img 
                             src={product.image.startsWith('/assets') ? `https://picsum.photos/seed/${product.id}/1200/1200` : product.image} 

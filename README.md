@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Inovexa Technology Storefront
 
-# Run and deploy your AI Studio app
+Inovexa is a minimal, professional storefront for enterprise networking hardware. The UI emphasizes glassy, frosted surfaces and a clean catalog experience across desktop and mobile.
 
-This contains everything you need to run your app locally.
+## Features
+- Glassmorphism-driven interface with dark mode support
+- Product catalog, categories, and quick-view modal
+- Responsive navigation, search, and contact flow
 
-View your app in AI Studio: https://ai.studio/apps/4d9fc54f-0d86-4442-9500-e9de7cf307dd
+## Tech Stack
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Motion One
+- React Router
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js (latest LTS recommended)
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+2. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+
+## Validation
+
+```bash
+npm run lint
+npm run build
+```

@@ -31,7 +31,7 @@ export function Categories() {
               >
                 <Link 
                   to={`/shop?category=${category.id}`} 
-                  className="group relative block aspect-[16/10] overflow-hidden rounded-3xl border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/5 hover:border-blue-600 dark:hover:border-blue-500/50 transition-all"
+                  className="group relative block aspect-[16/10] overflow-hidden rounded-3xl glass hover:[--glass-border:rgba(37,99,235,0.45)] dark:hover:[--glass-border:rgba(37,99,235,0.5)] transition-all"
                 >
                   <img 
                     src={category.image} 

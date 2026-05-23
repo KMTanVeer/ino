@@ -31,21 +31,21 @@ export function Privacy() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-blue-600/10 flex items-center justify-center text-blue-600">
                 <Lock size={24} />
               </div>
               <h3 className="font-bold text-black dark:text-white">Data Security</h3>
               <p className="text-xs text-black/50 dark:text-white/40 leading-relaxed">All transactions and communications are encrypted with enterprise-grade SSL certificates.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-purple-600/10 flex items-center justify-center text-purple-600">
                 <EyeOff size={24} />
               </div>
               <h3 className="font-bold text-black dark:text-white">No-Sale Policy</h3>
               <p className="text-xs text-black/50 dark:text-white/40 leading-relaxed">We never sell or rent your personal information to third-party marketing companies.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-green-600/10 flex items-center justify-center text-green-600">
                 <ShieldAlert size={24} />
               </div>

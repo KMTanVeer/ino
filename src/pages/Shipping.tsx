@@ -31,21 +31,21 @@ export function Shipping() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-blue-600/10 flex items-center justify-center text-blue-600">
                 <Truck size={24} />
               </div>
               <h3 className="font-bold text-black dark:text-white">Local Delivery</h3>
               <p className="text-xs text-black/50 dark:text-white/40 leading-relaxed">Next-day delivery available for in-stock items within Dhaka city.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-purple-600/10 flex items-center justify-center text-purple-600">
                 <Globe size={24} />
               </div>
               <h3 className="font-bold text-black dark:text-white">International</h3>
               <p className="text-xs text-black/50 dark:text-white/40 leading-relaxed">Shipping to over 50 countries via DHL, FedEx, and UPS Express.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-4">
+            <div className="p-6 rounded-2xl glass space-y-4">
               <div className="w-12 h-12 rounded-xl bg-green-600/10 flex items-center justify-center text-green-600">
                 <Box size={24} />
               </div>

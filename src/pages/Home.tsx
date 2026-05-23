@@ -126,8 +126,8 @@ export function Home() {
   const showcaseDotSecondaryClass = isBlueShowcase ? 'bg-blue-500/30' : 'bg-purple-500/30';
   const showcaseCategoryClass = isBlueShowcase ? 'text-blue-400/60' : 'text-purple-400/60';
   const showcaseFrameClass = isBlueShowcase
-    ? 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm'
-    : 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(147,51,234,0.28)] backdrop-blur-sm';
+    ? 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl glass p-3'
+    : 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl glass p-3';
   const showcaseImageClass = isBlueShowcase
     ? 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110'
     : 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(147,51,234,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
@@ -455,7 +455,7 @@ export function Home() {
       {/* Call to Action */}
       <section className="py-24 relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
-          <GlassContainer className="p-12 md:p-24 bg-blue-600/5 overflow-hidden group">
+          <GlassContainer className="p-12 md:p-24 overflow-hidden group [--glass-bg:rgba(37,99,235,0.08)] dark:[--glass-bg:rgba(37,99,235,0.12)] [--glass-border:rgba(37,99,235,0.25)]">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop')] bg-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" />
             <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto space-y-8">
               <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white tracking-tight">Ready to Upgrade Your <br />Infrastructure?</h2>

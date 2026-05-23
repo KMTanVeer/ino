@@ -87,7 +87,7 @@ export function Contact() {
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <div key={i} className="flex gap-4 p-6 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 hover:bg-black/10 dark:hover:bg-white/10 transition-all">
+                  <div key={i} className="flex gap-4 p-6 rounded-2xl glass hover:[--glass-bg:rgba(255,255,255,0.75)] dark:hover:[--glass-bg:rgba(15,15,18,0.72)] transition-all">
                     <div className="w-12 h-12 shrink-0 rounded-xl bg-blue-600/10 border border-blue-600/20 flex items-center justify-center text-blue-600 dark:text-blue-500">
                       <Icon size={24} />
                     </div>

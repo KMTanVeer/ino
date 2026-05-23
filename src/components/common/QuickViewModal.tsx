@@ -35,7 +35,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, isOpen,
             transition={{ type: 'spring', damping: 25, stiffness: 400 }}
             className="relative w-full max-w-5xl h-fit max-h-[95vh] overflow-hidden rounded-[2rem] shadow-[0_0_100px_rgba(37,99,235,0.2)] z-10"
           >
-            <GlassContainer className="h-full flex flex-col md:flex-row overflow-y-auto md:overflow-hidden p-0 bg-[#050505]/95 border-white/10">
+            <GlassContainer className="h-full flex flex-col md:flex-row overflow-y-auto md:overflow-hidden p-0 glass-heavy dark:[--glass-bg-strong:rgba(5,5,7,0.9)]">
               {/* Close Button */}
               <button
                 onClick={onClose}

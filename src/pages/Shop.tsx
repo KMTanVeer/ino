@@ -124,7 +124,7 @@ export function Shop() {
                         </div>
                     </div>
 
-                    <GlassContainer className="p-6 bg-blue-600/5">
+                    <GlassContainer className="p-6 [--glass-bg:rgba(37,99,235,0.08)] dark:[--glass-bg:rgba(37,99,235,0.12)] [--glass-border:rgba(37,99,235,0.25)]">
                         <h4 className="text-sm font-bold text-black dark:text-white mb-4">Promotions</h4>
                         <p className="text-xs text-black/50 dark:text-white/50 leading-relaxed mb-4">
                             Get up to <span className="text-black dark:text-white font-bold">15% discount</span> on bulk orders for enterprise servers.
@@ -153,7 +153,7 @@ export function Shop() {
                                 initial={{ opacity: 0, scale: 0.9, y: 20 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                                className="relative w-full max-w-md bg-white dark:bg-zinc-900 rounded-3xl p-8 shadow-2xl border border-black/5 dark:border-white/10"
+                                className="relative w-full max-w-md glass-heavy rounded-3xl p-8"
                             >
                                 <button 
                                     onClick={() => setShowPromoModal(false)}
@@ -174,7 +174,7 @@ export function Shop() {
                                         </p>
                                     </div>
                                     
-                                    <div className="p-6 rounded-2xl bg-blue-600/5 border border-blue-600/10 space-y-4">
+                                    <div className="p-6 rounded-2xl glass [--glass-bg:rgba(37,99,235,0.08)] dark:[--glass-bg:rgba(37,99,235,0.12)] [--glass-border:rgba(37,99,235,0.25)] space-y-4">
                                         <p className="text-center text-sm font-medium text-black/70 dark:text-white/70">
                                             To claim your discount, please contact our enterprise sales team:
                                         </p>

@@ -31,7 +31,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0, on
       whileHover={{ y: -10 }}
       className="group"
     >
-      <GlassContainer className="h-full flex flex-col p-3 bg-white/[0.02]" hoverGlow>
+      <GlassContainer className="h-full flex flex-col p-3" hoverGlow>
         {/* Badge */}
         {product.isFeatured && (
           <div className="absolute top-3 left-3 z-10 px-2.5 py-0.5 rounded-full bg-blue-600/80 backdrop-blur-sm text-[9px] font-bold text-white uppercase tracking-widest">

@@ -49,7 +49,7 @@ export function Navbar() {
       className={cn(
         'fixed top-0 z-50 w-full transition-all duration-500',
         (isScrolled || isMobileMenuOpen) 
-          ? 'py-4 backdrop-blur-2xl bg-white/80 dark:bg-black/80 border-b border-black/5 dark:border-white/10' 
+        ? 'py-4 glass-heavy border-b border-black/5 dark:border-white/10' 
           : 'py-6 bg-transparent'
       )}
     >
@@ -111,7 +111,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] bg-white/95 dark:bg-black/95 backdrop-blur-2xl flex items-center justify-center px-6"
+            className="fixed inset-0 z-[60] glass-heavy flex items-center justify-center px-6"
           >
             <button 
               onClick={() => setIsSearchOpen(false)}
@@ -162,7 +162,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
-            className="absolute top-full left-0 w-full bg-white/95 dark:bg-black/95 backdrop-blur-2xl border-b border-black/5 dark:border-white/10 overflow-hidden md:hidden shadow-[0_40px_80px_rgba(0,0,0,0.1)] dark:shadow-[0_40px_80px_rgba(0,0,0,0.7)]"
+            className="absolute top-full left-0 w-full glass-heavy border-b border-black/5 dark:border-white/10 overflow-hidden md:hidden shadow-[0_40px_80px_rgba(0,0,0,0.1)] dark:shadow-[0_40px_80px_rgba(0,0,0,0.7)]"
           >
             <div className="py-8 px-6 flex flex-col gap-6">
               {NAV_LINKS.map((link, i) => (
