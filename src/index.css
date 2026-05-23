@@ -29,9 +29,13 @@
     --glass-bg: rgba(6, 6, 8, 0.6);
     --glass-border: rgba(255, 255, 255, 0.12);
     --glass-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+    --glass-blur: 28px;
+    --glass-saturate: 160%;
     --glass-bg-strong: rgba(6, 6, 8, 0.75);
     --glass-border-strong: rgba(255, 255, 255, 0.2);
     --glass-shadow-strong: 0 32px 75px rgba(0, 0, 0, 0.78);
+    --glass-blur-strong: 36px;
+    --glass-saturate-strong: 175%;
   }
 
   body {
