@@ -47,10 +47,8 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        'fixed top-0 z-50 w-full transition-all duration-500',
-        (isScrolled || isMobileMenuOpen) 
-        ? 'py-4 glass-heavy border-b border-black/5 dark:border-white/10' 
-          : 'py-6 bg-transparent'
+        'fixed top-0 z-50 w-full glass-heavy border-b border-black/5 dark:border-white/10 transition-all duration-500',
+        (isScrolled || isMobileMenuOpen) ? 'py-4' : 'py-6'
       )}
     >
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
