@@ -83,7 +83,7 @@ export function Home() {
     },
     {
       id: 'intel-d7-p5520-series',
-      name: 'intel d7-p5520 series 7.68tb nvme',
+      name: 'Intel D7-P5520 Series 7.68TB NVMe',
       category: 'Enterprise NVMe SSD',
       tag: 'HIGH CAPACITY STORAGE',
       image: '/Products-image/all-image/Hero-images/intel-d7-p5520-7-68tb-nvme.jpg',
