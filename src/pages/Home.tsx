@@ -58,27 +58,35 @@ export function Home() {
 
   const heroShowcase = [
     {
-      id: 'server',
-      name: 'PowerEdge R640',
+      id: 'dell-poweredge-r640-server',
+      name: 'DELL PowerEdge R640 Server',
       category: 'Enterprise Server',
       tag: 'MISSION CRITICAL',
-      image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?q=80&w=800&auto=format&fit=crop',
+      image: '/Products-image/all-image/Hero-images/dell-poweredge-r640-server.jpg',
       color: 'purple'
     },
     {
-      id: 'switch',
-      name: 'Nexus N9K-C93180YC',
-      category: 'Data Center Switch',
+      id: 'juniper-mx80-universal-router',
+      name: 'Juniper MX80 Universal Router',
+      category: 'Universal Router',
       tag: 'ULTRA LOW LATENCY',
-      image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+      image: '/Products-image/all-image/Hero-images/juniper-mx80-universal-router.jpg',
       color: 'blue'
     },
     {
-      id: 'nic',
-      name: 'Intel X710-DA2',
-      category: '10G Ethernet Adapter',
+      id: 'cisco-n3k-c3064pq-10gx',
+      name: 'Cisco Nexus N3K-C3064PQ-10GX',
+      category: 'Data Center Switch',
       tag: 'EXTREME RELIABILITY',
-      image: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?q=80&w=800&auto=format&fit=crop',
+      image: '/Products-image/all-image/Hero-images/cisco-n3k-c3064pq-10gx.jpg',
+      color: 'blue'
+    },
+    {
+      id: 'intel-d7-p5520-series',
+      name: 'Intel D7-P5520 Series 7.68TB NVMe',
+      category: 'Enterprise NVMe SSD',
+      tag: 'HIGH CAPACITY STORAGE',
+      image: '/Products-image/all-image/Hero-images/intel-d7-p5520-7-68tb-nvme.jpg',
       color: 'blue'
     }
   ];
@@ -125,12 +133,10 @@ export function Home() {
   const showcaseDotPrimaryClass = isBlueShowcase ? 'bg-blue-500' : 'bg-purple-500';
   const showcaseDotSecondaryClass = isBlueShowcase ? 'bg-blue-500/30' : 'bg-purple-500/30';
   const showcaseCategoryClass = isBlueShowcase ? 'text-blue-400/60' : 'text-purple-400/60';
-  const showcaseFrameClass = isBlueShowcase
-    ? 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(59,130,246,0.28)] backdrop-blur-sm'
-    : 'relative w-full aspect-video flex items-center justify-center mb-8 rounded-3xl border border-black/10 dark:border-white/10 bg-white/80 dark:bg-black/20 p-3 shadow-[0_20px_55px_rgba(15,23,42,0.18)] dark:shadow-[0_20px_60px_rgba(147,51,234,0.28)] backdrop-blur-sm';
+  const showcaseImageBaseClass = 'w-full h-full object-contain drop-shadow-[0_34px_30px_rgba(15,23,42,0.3)] hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
   const showcaseImageClass = isBlueShowcase
-    ? 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(59,130,246,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110'
-    : 'w-full h-full object-contain rounded-2xl drop-shadow-[0_18px_36px_rgba(15,23,42,0.18)] dark:drop-shadow-[0_20px_60px_rgba(147,51,234,0.3)] dark:mix-blend-screen hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
+    ? `${showcaseImageBaseClass} dark:drop-shadow-[0_40px_48px_rgba(59,130,246,0.35)]`
+    : `${showcaseImageBaseClass} dark:drop-shadow-[0_40px_48px_rgba(147,51,234,0.35)]`;
   const bannerOrderButtonBaseClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-sm md:text-base';
   const bannerDetailsButtonClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base';
   const bannerContactHoverClass = isBlueBanner ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-purple-600 dark:hover:text-purple-400';
@@ -248,7 +254,7 @@ export function Home() {
                   <div className={`absolute inset-0 ${showcaseGlowClass} blur-[120px] rounded-full opacity-40 group-hover:opacity-60 transition-opacity`} />
                   
                   <div className="relative flex flex-col items-center text-center">
-                    <div className={showcaseFrameClass}>
+                    <div className="relative w-full aspect-video flex items-center justify-center mb-8">
                       <img 
                         src={heroShowcase[heroShowcaseIndex].image} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
