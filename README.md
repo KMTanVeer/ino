@@ -11,9 +11,13 @@ The right-side hero animation rotates these products:
 3. Cisco Nexus N3K-C3064PQ-10GX  
 4. Intel D7-P5520 Series 7.68TB NVMe
 
-Hero image assets are served from:
+Hero image assets are stored in:
 
-`/public/Products-image/all-image/Hero-images`
+`public/Products-image/all-image/Hero-images`
+
+And served in the app from:
+
+`/Products-image/all-image/Hero-images`
 
 ## Run Locally
 
