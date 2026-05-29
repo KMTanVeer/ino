@@ -62,7 +62,7 @@ export function Home() {
       name: 'DELL PowerEdge R640 Server',
       category: 'Enterprise Server',
       tag: 'MISSION CRITICAL',
-      image: '/hero-image/dell-poweredge-r640-server.jpg',
+      image: '/Products-image/all-image/Hero-images/dell-poweredge-r640-server.jpg',
       color: 'purple'
     },
     {
@@ -70,7 +70,7 @@ export function Home() {
       name: 'Juniper MX80 Universal Router',
       category: 'Universal Router',
       tag: 'ULTRA LOW LATENCY',
-      image: '/hero-image/juniper-mx80-universal-router.jpg',
+      image: '/Products-image/all-image/Hero-images/juniper-mx80-universal-router.jpg',
       color: 'blue'
     },
     {
@@ -78,7 +78,7 @@ export function Home() {
       name: 'Cisco Nexus N3K-C3064PQ-10GX',
       category: 'Data Center Switch',
       tag: 'EXTREME RELIABILITY',
-      image: '/hero-image/cisco-n3k-c3064pq-10gx.jpg',
+      image: '/Products-image/all-image/Hero-images/cisco-n3k-c3064pq-10gx.jpg',
       color: 'blue'
     },
     {
@@ -86,7 +86,7 @@ export function Home() {
       name: 'intel d7-p5520 series 7.68tb nvme',
       category: 'Enterprise NVMe SSD',
       tag: 'HIGH CAPACITY STORAGE',
-      image: '/hero-image/intel-d7-p5520-7-68tb-nvme.jpg',
+      image: '/Products-image/all-image/Hero-images/intel-d7-p5520-7-68tb-nvme.jpg',
       color: 'blue'
     }
   ];
