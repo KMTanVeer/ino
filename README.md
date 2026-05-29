@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Ino Website
 
-# Run and deploy your AI Studio app
+Frontend site for networking and enterprise hardware products, built with React + Vite.
 
-This contains everything you need to run your app locally.
+## Hero Showcase (Home)
 
-View your app in AI Studio: https://ai.studio/apps/4d9fc54f-0d86-4442-9500-e9de7cf307dd
+The right-side hero animation rotates these products:
+
+1. DELL PowerEdge R640 Server  
+2. Juniper MX80 Universal Router  
+3. Cisco Nexus N3K-C3064PQ-10GX  
+4. Intel D7-P5520 Series 7.68TB NVMe
+
+Hero image assets are served from:
+
+`/public/Products-image/all-image/Hero-images`
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start development server:
    `npm run dev`
+
+## Validation
+
+- Type check: `npm run lint`
+- Production build: `npm run build`
