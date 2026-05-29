@@ -133,9 +133,10 @@ export function Home() {
   const showcaseDotPrimaryClass = isBlueShowcase ? 'bg-blue-500' : 'bg-purple-500';
   const showcaseDotSecondaryClass = isBlueShowcase ? 'bg-blue-500/30' : 'bg-purple-500/30';
   const showcaseCategoryClass = isBlueShowcase ? 'text-blue-400/60' : 'text-purple-400/60';
+  const showcaseImageBaseClass = 'w-full h-full object-contain drop-shadow-[0_34px_30px_rgba(15,23,42,0.3)] hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
   const showcaseImageClass = isBlueShowcase
-    ? 'w-full h-full object-contain drop-shadow-[0_34px_30px_rgba(15,23,42,0.3)] dark:drop-shadow-[0_40px_48px_rgba(59,130,246,0.35)] hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110'
-    : 'w-full h-full object-contain drop-shadow-[0_34px_30px_rgba(15,23,42,0.3)] dark:drop-shadow-[0_40px_48px_rgba(147,51,234,0.35)] hover:scale-[1.03] transition-transform duration-700 brightness-105 dark:brightness-110 contrast-110';
+    ? `${showcaseImageBaseClass} dark:drop-shadow-[0_40px_48px_rgba(59,130,246,0.35)]`
+    : `${showcaseImageBaseClass} dark:drop-shadow-[0_40px_48px_rgba(147,51,234,0.35)]`;
   const bannerOrderButtonBaseClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl text-white font-black uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-sm md:text-base';
   const bannerDetailsButtonClass = 'px-8 py-4 md:px-10 md:py-5 rounded-xl bg-white/70 dark:bg-white/5 border border-black/15 dark:border-white/10 text-black dark:text-white font-black uppercase tracking-widest transition-all hover:bg-white dark:hover:bg-white/10 backdrop-blur-xl text-sm md:text-base';
   const bannerContactHoverClass = isBlueBanner ? 'hover:text-blue-600 dark:hover:text-blue-400' : 'hover:text-purple-600 dark:hover:text-purple-400';
@@ -253,7 +254,7 @@ export function Home() {
                   <div className={`absolute inset-0 ${showcaseGlowClass} blur-[120px] rounded-full opacity-40 group-hover:opacity-60 transition-opacity`} />
                   
                   <div className="relative flex flex-col items-center text-center">
-                    <div className="relative w-full aspect-video flex items-center justify-center mb-8 p-3">
+                    <div className="relative w-full aspect-video flex items-center justify-center mb-8">
                       <img 
                         src={heroShowcase[heroShowcaseIndex].image} 
                         alt={heroShowcase[heroShowcaseIndex].name} 
